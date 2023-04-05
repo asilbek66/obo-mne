@@ -1,0 +1,238 @@
+* {
+    margin: 0;                      /*  толчок из внешности */
+    padding: 0;                     /*  толчок из внутри     */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;                 /* удалить строку внизу цепочки */
+}
+
+.navbar {
+    background: #000;                                      /*  задний фон */   
+    padding: 14px 0;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-content__list {
+    display: flex;
+}
+   
+/* логотип */
+
+
+.navbar-link {
+    color: #fff;                                               /* цвет текста */
+    font-weight: 700;  
+    font-size: 40px;                                             /*размер текста*/
+    line-height: 48px;
+}
+
+.navbar-content__link {
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    transition: .3s;
+
+}
+.navbar-content__link:hover{
+    color: #aaa;
+}
+
+.navbar-content__list>li {
+    margin-right: 70px;
+}
+
+.navbar-content__list>li:nth-last-of-type(1) {
+    margin-right: 0;
+}
+
+.header-content {
+    background: url(./../img/intro-bg.jpg)no-repeat center/cover;
+    height: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-content__title {
+    margin-bottom: 151px;
+    font-style: 40px;
+    line-height: 48px;
+}
+
+/* позвонить */
+
+
+.btn {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 42px;
+    color: #000;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 23px;
+    transition: .3s;
+    border: none;
+}
+
+.btn:hover{
+    background: #aaa;
+}
+.section__title {
+    font-weight: 700;
+    font-style: 35px;
+    line-height: 48px;
+    color: #fff;
+    margin-bottom: 47px;
+    text-align: center;
+    font-size: 35px;
+}
+.about{
+    background: #0e1C25;
+    padding: 30px 0 112px;
+}
+
+.about__content{
+    display: flex;
+    gap: 105px;
+}
+
+
+
+
+.about__left,
+.about__right {
+    width: 50%;
+}
+
+.about__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__left-img {
+    width: 100%;
+}
+
+.about__title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    color: #fff;
+    margin-bottom: 62px;
+}
+
+.about__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: #fff;
+
+}
+
+.work {
+    background-color: #5c6b81;
+    padding: 43px 70px;
+}
+
+.work__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.work__card {
+    background: #b12b06;
+    border-radius: 10px;
+    padding: 15px 15px 27px;
+    max-width: 312px;
+    text-align: center;
+}
+
+.work__card-img {
+    width: 100%;
+    border-radius: 10px;
+}
+.work__card-title{
+    font-weight: 700;
+    font-style: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+.work__card-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.work__card-btn{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #000; 
+    background: #fff;  
+    border-radius: 10px;
+    padding: 8px 22px;
+    display: inline-block;
+    transition: .5s;
+    }
+    .work__card-btn:hover{
+        background-color: #aaa;
+        color: blue;
+    }
+.footer{
+    background: #000;
+    padding: 46px 0 62px;
+}
+.footer__title{
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 49px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 34px;
+
+}
+.footer__social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+.footer__link{
+    color: #73b3ff;
+    font-size: 40px;
+    transition: .3s;
+}
+.footer__link{
+color: #b4d4fb;
+}
